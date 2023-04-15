@@ -88,12 +88,12 @@ main {
 }
 .signup__section .form__content form .input__container img,
 .signup__section .form__content form .input__container .error__message {
-  display: none;
+  opacity: 0;
   transition: 0.3s;
 }
 .signup__section .form__content form .input__container.error img,
 .signup__section .form__content form .input__container.error .error__message {
-  display: block;
+  opacity: 1;
 }
 
 .signup__section .form__content form .input__container.error input {
