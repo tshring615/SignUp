@@ -1,0 +1,165 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 16px;
+  background: url(images/bg-intro-mobile.png);
+  background-color: hsl(0, 100%, 74%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  margin: 6rem 2rem;
+  text-align: center;
+}
+
+.article__section h1 {
+  font-size: 2rem;
+  margin: 0 1.2rem 2rem 1.2rem;
+}
+.article__section p {
+  margin-bottom: 3rem;
+  line-height: 1.8rem;
+}
+
+.signup__section .form__title__container {
+  background-color: hsl(248, 32%, 49%);
+  padding: 1rem 3rem;
+  box-shadow: 0px 5px 10px 0px hsla(0, 0%, 16%, 0.4);
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+}
+.signup__section .form__title {
+  font-weight: 600;
+}
+.signup__section .form__title .form__title-span {
+  color: hsl(246, 25%, 77%);
+  font-weight: 500;
+}
+.signup__section .form__content {
+  width: 100%;
+  background-color: #fff;
+  padding: 1.5rem;
+  box-shadow: 0px 5px 10px 0px hsla(0, 0%, 16%, 0.4);
+  border-radius: 8px;
+}
+.signup__section .form__content form {
+  width: 100%;
+}
+.signup__section .form__content form .input__container {
+  position: relative;
+  min-width: 100%;
+  margin-bottom: 1.5rem;
+}
+.signup__section .form__content form .input__container input {
+  display: block;
+  width: 100%;
+  padding: 1rem 2rem 1rem 1rem;
+  border: 1px solid hsl(246, 25%, 77%);
+  border-radius: 6px;
+}
+.signup__section .form__content form .input__container input::-moz-placeholder {
+  color: hsl(249, 10%, 26%);
+  font-weight: 600;
+}
+.signup__section .form__content form .input__container input::placeholder {
+  color: hsl(249, 10%, 26%);
+  font-weight: 600;
+}
+.signup__section .form__content form .input__container img {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+}
+.signup__section .form__content form .input__container .error__message {
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+  color: hsl(0, 100%, 74%);
+  font-style: italic;
+}
+.signup__section .form__content form .input__container img,
+.signup__section .form__content form .input__container .error__message {
+  display: none;
+  transition: 0.3s;
+}
+.signup__section .form__content form .input__container.error img,
+.signup__section .form__content form .input__container.error .error__message {
+  display: block;
+}
+
+.signup__section .form__content form .input__container.error input {
+  border: 2px solid hsl(0, 100%, 74%);
+}
+ 
+.signup__section .form__content form .input__container.error input::placeholder {
+  color: hsl(0, 100%, 74%);
+}
+
+.signup__section .form__content #submit {
+  width: 100%;
+  background: transparent;
+  background-color: hsl(154, 59%, 51%);
+  border: none;
+  padding: 1rem 2rem 1rem 1rem;
+  border-radius: 6px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 400;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.signup__section .form__content #submit:hover {
+  background-color: hsl(155, 34%, 53%);
+}
+.signup__section .form__content p {
+  color: hsl(246, 25%, 77%);
+  font-size: 0.75rem;
+  font-weight: 300;
+  margin-top: 1rem;
+}
+.signup__section .form__content p span {
+  color: hsl(0, 100%, 74%);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media (min-width: 765px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100svh;
+  }
+  body main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 3rem;
+    justify-content: center;
+    max-width: 1100px;
+  }
+  body main .article__section {
+    text-align: left;
+  }
+  body main .article__section h1 {
+    margin: 0;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  body .signup__section .form__content {
+    padding: 2.5rem;
+  }
+  body .signup__section .form__content form .input__container {
+    margin-bottom: 2.5rem;
+  }
+}/*# sourceMappingURL=styles.css.map */
